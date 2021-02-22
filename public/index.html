@@ -26,6 +26,7 @@
                 <p class="notification air">
                     No se encontraron productos en su lista
                 </p>
+                <p class="scream_emoji air">😱</p>
             </section>
 
             <section class="my-list off" id="my-list">
@@ -35,13 +36,17 @@
                 </ul>
             </section>
 
+            <section class="item-detail off" id="item-detail">
+                <h1>Pantalla detalle</h1>
+            </section>
+
             <section class="float-button">
                 <!-- Button trigger modal -->
                 <button
                     type="button"
                     class="btn btn-primary my-float-button"
                     data-toggle="modal"
-                    data-target="#exampleModal"
+                    data-target="#cargaProducto"
                     id="plus"
                 >
                     <i class="fas fa-plus"></i>
@@ -50,15 +55,15 @@
                 <!-- Modal -->
                 <div
                     class="modal fade"
-                    id="exampleModal"
+                    id="cargaProducto"
                     tabindex="-1"
-                    aria-labelledby="exampleModalLabel"
+                    aria-labelledby="cargaProductoLabel"
                     aria-hidden="true"
                 >
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">
+                                <h5 class="modal-title" id="cargaProductoLabel">
                                     Agregar Producto
                                 </h5>
                                 <button
@@ -72,12 +77,12 @@
                             </div>
                             <div class="modal-body">
                                 <div class="form-group">
-                                    <label for="title">Titulo</label>
+                                    <label for="title">Producto</label>
                                     <input
                                         type="text"
                                         class="form-control"
                                         id="title"
-                                        placeholder="Ingrese titulo"
+                                        placeholder="Ingrese producto"
                                         autofocus
                                         required
                                     />
@@ -89,11 +94,14 @@
                                         id="category"
                                         required
                                     >
+                                        <option>⭐ Varios</option>
+                                        <option>🍹 Bebidas</option>
                                         <option>🥩 Carnes</option>
                                         <option>📱 Electronica</option>
                                         <option>🐄 Lacteos</option>
-                                        <option>🚗 Vehiculos</option>
+                                        <option>🛀🏻 Limpieza</option>
                                         <option>🥬 Verduras</option>
+                                        <option>🍙 Viveres</option>
                                     </select>
                                 </div>
                                 <div class="form-group">

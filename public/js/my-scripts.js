@@ -3,9 +3,11 @@ let father = document.getElementById("my-container");
 let addButton = document
     .getElementById("add")
     .addEventListener("click", function () {
-        let category = document.getElementById("category").value;
-
         let title = document.getElementById("title").value;
+        let category = document.getElementById("category").value;
+        let description = document.getElementById("description").value;
+
+        var cargaProducto = $("#cargaProducto").modal({});
 
         if (title != "") {
             let model = `<li
@@ -19,8 +21,10 @@ let addButton = document
             document.getElementById("my-list").classList.remove("off");
 
             document.getElementById("title").value = "";
-            document.getElementById("category").value = "🥩 Carnes";
+            document.getElementById("category").value = "⭐ Varios";
             document.getElementById("description").value = "";
+
+            $("#cargaProducto").modal("hide");
         }
     });
 
@@ -28,6 +32,6 @@ let plusButton = document
     .getElementById("plus")
     .addEventListener("click", function () {
         document.getElementById("title").value = "";
-        document.getElementById("category").value = "🥩 Carnes";
+        document.getElementById("category").value = "⭐ Varios";
         document.getElementById("description").value = "";
     });
