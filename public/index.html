@@ -138,6 +138,30 @@
             crossorigin="anonymous"
         ></script>
 
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use 
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+
+        <script>
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+                apiKey: "AIzaSyAFQXFv6c05Rjf501VlW6QQiOSs3JjJ9jU",
+                authDomain: "reto-3-summerhack-dag.firebaseapp.com",
+                projectId: "reto-3-summerhack-dag",
+                storageBucket: "reto-3-summerhack-dag.appspot.com",
+                messagingSenderId: "529373582037",
+                appId: "1:529373582037:web:8e57f7a053c137fb13885c",
+                measurementId: "G-6BESW9QSJL",
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+
         <script src="js/my-scripts.js"></script>
     </body>
 </html>
