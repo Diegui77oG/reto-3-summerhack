@@ -12,7 +12,7 @@ let addButton = document
         if (title != "") {
             let model = `<li
         class="list-group-item d-flex justify-content-between align-items-center"
-        >${category} | ${title}</li>`;
+        ><span itemprop="itemListElement">${category} | ${title}</span></li>`;
 
             father.innerHTML += model;
 

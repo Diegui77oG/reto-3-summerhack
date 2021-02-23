@@ -83,9 +83,21 @@
                 <p class="scream_emoji air">😱</p>
             </section>
 
-            <section class="my-list off" id="my-list">
-                <h1 class="message air">Mi listado de compras</h1>
-                <ul class="list-group" id="my-container">
+            <section
+                class="my-list off"
+                id="my-list"
+                itemscope
+                itemtype="https://schema.org/ItemList"
+            >
+                <h1 class="message air" itemprop="name">
+                    Mi listado de compras
+                </h1>
+                <ul
+                    class="list-group"
+                    id="my-container"
+                    itemprop="itemListOrder"
+                    href="https://schema.org/ItemListOrderDescending"
+                >
                     <!-- Items del listado de compras -->
                 </ul>
             </section>
