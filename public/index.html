@@ -102,8 +102,24 @@
                 </ul>
             </section>
 
-            <section class="item-detail off" id="item-detail">
-                <h1>Pantalla detalle</h1>
+            <section class="item-detail air off" id="item-detail">
+                <img
+                    src="img/varios.png"
+                    alt="Varios"
+                    srcset=""
+                    id="productImage"
+                />
+                <h1 id="productName">Varios</h1>
+                <p id="productDescription">
+                    Esto es una descripción del producto
+                </p>
+                <button
+                    type="button"
+                    class="btn btn-outline-primary"
+                    id="btn-back"
+                >
+                    Volver
+                </button>
             </section>
 
             <section class="float-button">
@@ -143,11 +159,11 @@
                             </div>
                             <div class="modal-body">
                                 <div class="form-group">
-                                    <label for="title">Producto</label>
+                                    <label for="product">Producto</label>
                                     <input
                                         type="text"
                                         class="form-control"
-                                        id="title"
+                                        id="product"
                                         placeholder="Ingrese producto"
                                         autofocus
                                         required
@@ -160,14 +176,30 @@
                                         id="category"
                                         required
                                     >
-                                        <option>⭐ Varios</option>
-                                        <option>🍹 Bebidas</option>
-                                        <option>🥩 Carnes</option>
-                                        <option>📱 Electronica</option>
-                                        <option>🐄 Lacteos</option>
-                                        <option>🛀🏻 Limpieza</option>
-                                        <option>🥬 Verduras</option>
-                                        <option>🍙 Viveres</option>
+                                        <option value="img/varios.png" selected>
+                                            ⭐ Varios
+                                        </option>
+                                        <option value="img/bebidas.png">
+                                            🍹 Bebidas
+                                        </option>
+                                        <option value="img/carnes.png">
+                                            🥩 Carnes
+                                        </option>
+                                        <option value="img/electronica.png">
+                                            📱 Electronica
+                                        </option>
+                                        <option value="img/lacteos.png">
+                                            🐄 Lacteos
+                                        </option>
+                                        <option value="img/limpieza.png">
+                                            🛀🏻 Limpieza
+                                        </option>
+                                        <option value="img/verduras.png">
+                                            🥬 Verduras
+                                        </option>
+                                        <option value="img/viveres.png">
+                                            🍙 Viveres
+                                        </option>
                                     </select>
                                 </div>
                                 <div class="form-group">

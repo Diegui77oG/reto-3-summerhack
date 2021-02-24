@@ -37,6 +37,19 @@
     display: none;
 }
 
+.list-group {
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.icono {
+    width: 50px;
+}
+
+.item-detail {
+    text-align: center;
+}
+
 .my-float-button {
     font-size: 14px;
     font-weight: bold;
