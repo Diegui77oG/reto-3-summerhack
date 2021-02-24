@@ -5,6 +5,8 @@ let emptyMessage = document.getElementById("emptyMessage");
 let myList = document.getElementById("my-list");
 let itemDetail = document.getElementById("item-detail");
 
+let btnPlus = document.getElementById("plus");
+
 let addButton = document
     .getElementById("add")
     .addEventListener("click", function () {
@@ -53,6 +55,7 @@ let myContainer = document
         document.getElementById(
             "productDescription"
         ).innerHTML = e.target.getAttribute("data-description");
+        btnPlus.classList.add("off");
     });
 
 let btnBack = document
@@ -60,4 +63,5 @@ let btnBack = document
     .addEventListener("click", function () {
         myList.classList.remove("off");
         itemDetail.classList.add("off");
+        btnPlus.classList.remove("off");
     });
